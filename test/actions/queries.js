@@ -1,28 +1,5 @@
 import expect from "expect";
-import { deleteQuery, selectQuery, changeQuery, setQueryPath, addQueryFilter, deleteQueryFilter, submitQuery } from "../../src/actions/queries";
-import sinon from "sinon";
-import server from "../../src/actions/server";
-import { parsers } from "../../src/parsers/gremlin";
-
-const sampleQuery = {
-	domain: "wwperson",
-	deleted: false,
-	pathToQuerySelection: ["or", 0, "and", 0],
-
-	or: [{
-		domain: "wwperson",
-		type: "entity",
-		and: [
-			{
-				type: "property",
-				name: "gender",
-				or: [
-					{ type: "value", value: "FEMALE" }
-				]
-			}
-		]
-	}]
-};
+import { deleteQuery, selectQuery, changeQuery, setQueryPath, addQueryFilter, deleteQueryFilter } from "../../src/actions/queries";
 
 describe("queries actions", () => { //eslint-disable-line no-undef
 

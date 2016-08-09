@@ -1,4 +1,3 @@
-import { parsers } from "../parsers/gremlin";
 import server from "./server";
 import config from "../config";
 
@@ -41,7 +40,6 @@ const submitQuery = () => (dispatch, getState) => {
 	const { queries } = getState();
 	dispatch({type: "SET_QUERY_RESULTS_PENDING"});
 
-	const q = parsers.parseGremlin(queries.queries[queries.currentQuery]);
 	server.fastXhr({
 		method: "POST",
 		headers: {"Accept": "application/json", "Content-type": "application/json"},

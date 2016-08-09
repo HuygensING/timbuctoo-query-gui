@@ -7,12 +7,9 @@ import QueryComponent from "./query-component";
 import DraggableIcon from "./query-component/draggable-icon";
 import SearchIcon from "./search-icon";
 import QueryFilters from "./query-filters";
-import Input from "hire-forms-input";
-import Select from "hire-forms-select";
 
 import getIn from "../../util/get-in";
 import clone from "../../util/clone-deep";
-import parseGremlin from "../../parsers/gremlin";
 
 class App extends React.Component {
 
