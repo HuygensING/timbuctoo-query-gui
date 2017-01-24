@@ -1,0 +1,5 @@
+= timbuctoo-query-gui
+
+This is a mockup for a graph query GUI in which you draw the graph you want to see and it then patternmatches that graph and shows how often it finds it.
+
+It's not really for production use and won't even run without writing some backend code first.
